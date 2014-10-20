@@ -1,4 +1,6 @@
 'use strict';
+/* global app:true */
+/* exported app */
 
 /**
  * @ngdoc overview
@@ -15,8 +17,10 @@ var app = angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'firebase'
   ])
+  .constant('FIREBASE_URL', 'https://ang-news-v2.firebaseIO.com/')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
