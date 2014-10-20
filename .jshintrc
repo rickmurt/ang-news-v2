@@ -1,3 +1,5 @@
+/* global app:true */
+/* exported app */
 {
   "node": true,
   "browser": true,
@@ -19,6 +21,7 @@
   "trailing": true,
   "smarttabs": true,
   "globals": {
-    "angular": false
+    "angular": false,
+    "app": false
   }
 }
